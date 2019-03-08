@@ -25,6 +25,17 @@ type Country {
   continent: String
   createdAt: String!
 }
+type ActivityUser{
+  _id :ID
+  firstName: String!
+  lastName: String!
+  email: String!
+}
+type Activity {
+  activityType : String!
+  user: ActivityUser!
+  createdAt: String!
+}
 input UserInput{
   firstName: String!
   lastName: String!
@@ -37,6 +48,7 @@ input UserInput{
 type RootQuery{
     userLogin(email: String!, password: String!): UserAuthToken!
     getCountries: [Country!] !
+    getActivity: [Activity]!
 }
 type RootMutation{
 userRegistration(userInput: UserInput): User
