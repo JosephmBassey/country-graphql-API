@@ -28,7 +28,7 @@ app.use('/graphql',
   }));
 
   app.get('/', (req, res, next) => {
-    res.json('Welcome to Vision Predict GraphQl Server!');
+    res.json('Welcome to GraphQl Server!');
   });
   mongoose.connect(process.env.DB_HOST, {
     useNewUrlParser: true
