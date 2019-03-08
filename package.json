@@ -1,5 +1,5 @@
 {
-  "name": "GraphQL API ",
+  "name": "GraphQL-API ",
   "version": "1.0.0",
   "description": "GraphQL API for performing Queries and Mutation a Country Schema, with User Authentication(JWT) and activity tracker, using Express, MongoDB and express-graphQL",
   "main": "app.js",
