@@ -6,6 +6,7 @@ import {
   buildSchema
 } from 'graphql';
 require("dotenv").config();
+import cors from 'cors'
 import isUserAuth from './api/middleware/isUserAuth'
 import schema from './api/schema'
 import rootResolver from './api/resolvers/index'
@@ -13,6 +14,7 @@ import rootResolver from './api/resolvers/index'
 const port = 9000
 
 const app = express();
+app.use(cors())
 app.use(bodyParser.json());
 app.use(isUserAuth);
 app.use(bodyParser.json());

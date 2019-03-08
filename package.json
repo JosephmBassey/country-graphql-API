@@ -1,14 +1,13 @@
 {
-  "name": "natterbase-api-test",
+  "name": "GraphQL API ",
   "version": "1.0.0",
-  "description": "RESTFUL API for performing CRUD operations on a Country resource",
+  "description": "GraphQL API for performing Queries and Mutation a Country Schema, with User Authentication(JWT) and activity tracker, using Express, MongoDB and express-graphQL",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js --exec babel-node -e js"
   },
   "keywords": [
-    "REST",
     "API",
     "GRAPHQL"
   ],
